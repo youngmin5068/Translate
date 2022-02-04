@@ -9,27 +9,47 @@ import UIKit
 import SnapKit
 import SwiftUI
 
+
+
+
+enum buttontype {
+    case source
+    case target
+}
+
+
+
 final class TranslateViewController: UIViewController {
+    
+    private var sourceLanguage: Language = .ko
+    private var targetLanguage: Language = .en
     
     private lazy var sourceLanguageButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Korean", for: .normal)
+        button.setTitle(sourceLanguage.title, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 15.0, weight: .semibold)
         button.setTitleColor(.label, for: .normal)
         button.backgroundColor = .systemBackground
         button.layer.cornerRadius = 9.0
+        
+        button.addTarget(self, action: #selector(didTapSourceLanguageButton), for: .touchUpInside)
+        
         return button
     }()
     private lazy var targetLanguageButton: UIButton = {
         let button = UIButton()
-        button.setTitle("English", for: .normal)
+        button.setTitle(targetLanguage.title, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 15.0, weight: .semibold)
         button.setTitleColor(.label, for: .normal)
         button.backgroundColor = .systemBackground
         button.layer.cornerRadius = 9.0
+        
+        button.addTarget(self, action: #selector(didTapTargetLanguageButton), for: .touchUpInside)
+        
         return button
     }()
     
+  
     private lazy var buttonStackView : UIStackView = {
         let stackView = UIStackView()
         stackView.distribution = .fillEqually
@@ -125,6 +145,37 @@ extension TranslateViewController: SourceTextViewControllerDelegate {
 
 
 private extension TranslateViewController {
+    
+    @objc func didTapSourceLanguageButton() {
+        didTapLanguageButton(type: .source)
+    }
+    @objc func didTapTargetLanguageButton() {
+        didTapLanguageButton(type: .target)
+    }
+    
+    func didTapLanguageButton(type: buttontype) {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        Language.allCases
+            .forEach{ language in
+                let action = UIAlertAction(title: language.title, style: .default){[weak self] _ in
+                    switch type {
+                    case .source:
+                        self?.sourceLanguage = language
+                        self?.sourceLanguageButton.setTitle(language.title, for: .normal)
+                    case .target:
+                        self?.targetLanguage = language
+                        self?.targetLanguageButton.setTitle(language.title, for: .normal)
+                    }
+            }
+                alertController.addAction(action)
+            }
+        
+            let cancelAction = UIAlertAction(title:"취소하기",style: .cancel,handler: nil)
+            alertController.addAction(cancelAction)
+    
+        present(alertController ,animated: true)
+    }
+    
     
     func setupViews() {
         [

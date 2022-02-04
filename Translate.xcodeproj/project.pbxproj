@@ -20,6 +20,7 @@
 		FBB1D39827AD0A4C00E4E271 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39727AD0A4C00E4E271 /* TranslateViewController.swift */; };
 		FBB1D39A27AD0A7200E4E271 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39927AD0A7200E4E271 /* BookmarkViewController.swift */; };
 		FBB1D39D27AD381F00E4E271 /* SourceTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39C27AD381F00E4E271 /* SourceTextViewController.swift */; };
+		FBB1D3A027AD45D600E4E271 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39F27AD45D600E4E271 /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FBB1D39727AD0A4C00E4E271 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		FBB1D39927AD0A7200E4E271 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		FBB1D39C27AD381F00E4E271 /* SourceTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextViewController.swift; sourceTree = "<group>"; };
+		FBB1D39F27AD45D600E4E271 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		FBB1D35327ACFAB700E4E271 = {
 			isa = PBXGroup;
 			children = (
+				FBB1D39F27AD45D600E4E271 /* Language.swift */,
 				FBB1D35E27ACFAB700E4E271 /* Translate */,
 				FBB1D37527ACFAB800E4E271 /* TranslateTests */,
 				FBB1D37F27ACFAB800E4E271 /* TranslateUITests */,
@@ -294,6 +297,7 @@
 				FBB1D36427ACFAB700E4E271 /* TabBarController.swift in Sources */,
 				FBB1D39A27AD0A7200E4E271 /* BookmarkViewController.swift in Sources */,
 				FBB1D39D27AD381F00E4E271 /* SourceTextViewController.swift in Sources */,
+				FBB1D3A027AD45D600E4E271 /* Language.swift in Sources */,
 				FBB1D36027ACFAB700E4E271 /* AppDelegate.swift in Sources */,
 				FBB1D36227ACFAB700E4E271 /* SceneDelegate.swift in Sources */,
 				FBB1D39827AD0A4C00E4E271 /* TranslateViewController.swift in Sources */,
