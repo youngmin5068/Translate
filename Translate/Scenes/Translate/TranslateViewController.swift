@@ -15,6 +15,13 @@ import SwiftUI
 enum buttontype {
     case source
     case target
+    
+    var color: UIColor {
+        switch self {
+        case .source: return .label
+        case .target: return .systemPink
+        }
+    }
 }
 
 

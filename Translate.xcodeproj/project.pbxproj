@@ -11,6 +11,8 @@
 		FB5BE6B827AD53A8003D6DE7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB5BE6B727AD53A8003D6DE7 /* RxSwift */; };
 		FB5BE6BA27AE4A36003D6DE7 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6B927AE4A36003D6DE7 /* Bookmark.swift */; };
 		FB5BE6BC27AE4BAC003D6DE7 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */; };
+		FB5BE6BF27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6BE27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift */; };
+		FB5BE6C127AE5B90003D6DE7 /* bookmarkTextStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6C027AE5B90003D6DE7 /* bookmarkTextStackView.swift */; };
 		FBB1D36027ACFAB700E4E271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */; };
 		FBB1D36227ACFAB700E4E271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */; };
 		FBB1D36427ACFAB700E4E271 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D36327ACFAB700E4E271 /* TabBarController.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		FB5BE6B927AE4A36003D6DE7 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		FB5BE6BE27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB5BE6C027AE5B90003D6DE7 /* bookmarkTextStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookmarkTextStackView.swift; sourceTree = "<group>"; };
 		FBB1D35C27ACFAB700E4E271 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB5BE6BD27AE52DB003D6DE7 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				FBB1D39927AD0A7200E4E271 /* BookmarkListViewController.swift */,
+				FB5BE6BE27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift */,
+				FB5BE6C027AE5B90003D6DE7 /* bookmarkTextStackView.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
 		FBB1D35327ACFAB700E4E271 = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +166,7 @@
 			children = (
 				FBB1D36327ACFAB700E4E271 /* TabBarController.swift */,
 				FBB1D39E27AD385900E4E271 /* Translate */,
-				FBB1D39927AD0A7200E4E271 /* BookmarkListViewController.swift */,
+				FB5BE6BD27AE52DB003D6DE7 /* Bookmark */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -310,7 +324,9 @@
 				FBB1D36427ACFAB700E4E271 /* TabBarController.swift in Sources */,
 				FB5BE6BC27AE4BAC003D6DE7 /* UserDefaults+.swift in Sources */,
 				FBB1D39A27AD0A7200E4E271 /* BookmarkListViewController.swift in Sources */,
+				FB5BE6C127AE5B90003D6DE7 /* bookmarkTextStackView.swift in Sources */,
 				FBB1D39D27AD381F00E4E271 /* SourceTextViewController.swift in Sources */,
+				FB5BE6BF27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift in Sources */,
 				FBB1D3A027AD45D600E4E271 /* Language.swift in Sources */,
 				FBB1D36027ACFAB700E4E271 /* AppDelegate.swift in Sources */,
 				FBB1D36227ACFAB700E4E271 /* SceneDelegate.swift in Sources */,
