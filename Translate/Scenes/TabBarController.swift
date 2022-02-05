@@ -14,7 +14,7 @@ final class TabBarController: UITabBarController {
         
         
         let translateViewController = TranslateViewController()
-        let bookmarkViewController = BookmarkViewController()
+        let bookmarkViewController = BookmarkListViewController()
         
         translateViewController.tabBarItem = UITabBarItem(
             title:"Translate",

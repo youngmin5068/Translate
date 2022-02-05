@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5BE6B627AD53A8003D6DE7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FB5BE6B527AD53A8003D6DE7 /* RxCocoa */; };
+		FB5BE6B827AD53A8003D6DE7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB5BE6B727AD53A8003D6DE7 /* RxSwift */; };
+		FB5BE6BA27AE4A36003D6DE7 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6B927AE4A36003D6DE7 /* Bookmark.swift */; };
+		FB5BE6BC27AE4BAC003D6DE7 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */; };
 		FBB1D36027ACFAB700E4E271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */; };
 		FBB1D36227ACFAB700E4E271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */; };
 		FBB1D36427ACFAB700E4E271 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D36327ACFAB700E4E271 /* TabBarController.swift */; };
@@ -18,7 +22,7 @@
 		FBB1D39127ACFC4A00E4E271 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FBB1D39027ACFC4A00E4E271 /* Alamofire */; };
 		FBB1D39427ACFC5900E4E271 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FBB1D39327ACFC5900E4E271 /* SnapKit */; };
 		FBB1D39827AD0A4C00E4E271 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39727AD0A4C00E4E271 /* TranslateViewController.swift */; };
-		FBB1D39A27AD0A7200E4E271 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39927AD0A7200E4E271 /* BookmarkViewController.swift */; };
+		FBB1D39A27AD0A7200E4E271 /* BookmarkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39927AD0A7200E4E271 /* BookmarkListViewController.swift */; };
 		FBB1D39D27AD381F00E4E271 /* SourceTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39C27AD381F00E4E271 /* SourceTextViewController.swift */; };
 		FBB1D3A027AD45D600E4E271 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D39F27AD45D600E4E271 /* Language.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB5BE6B927AE4A36003D6DE7 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		FBB1D35C27ACFAB700E4E271 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +60,7 @@
 		FBB1D38027ACFAB800E4E271 /* TranslateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateUITests.swift; sourceTree = "<group>"; };
 		FBB1D38227ACFAB800E4E271 /* TranslateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBB1D39727AD0A4C00E4E271 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
-		FBB1D39927AD0A7200E4E271 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		FBB1D39927AD0A7200E4E271 /* BookmarkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListViewController.swift; sourceTree = "<group>"; };
 		FBB1D39C27AD381F00E4E271 /* SourceTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextViewController.swift; sourceTree = "<group>"; };
 		FBB1D39F27AD45D600E4E271 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5BE6B627AD53A8003D6DE7 /* RxCocoa in Frameworks */,
 				FBB1D39127ACFC4A00E4E271 /* Alamofire in Frameworks */,
+				FB5BE6B827AD53A8003D6DE7 /* RxSwift in Frameworks */,
 				FBB1D39427ACFC5900E4E271 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +97,6 @@
 		FBB1D35327ACFAB700E4E271 = {
 			isa = PBXGroup;
 			children = (
-				FBB1D39F27AD45D600E4E271 /* Language.swift */,
 				FBB1D35E27ACFAB700E4E271 /* Translate */,
 				FBB1D37527ACFAB800E4E271 /* TranslateTests */,
 				FBB1D37F27ACFAB800E4E271 /* TranslateUITests */,
@@ -110,6 +117,9 @@
 		FBB1D35E27ACFAB700E4E271 /* Translate */ = {
 			isa = PBXGroup;
 			children = (
+				FBB1D39F27AD45D600E4E271 /* Language.swift */,
+				FB5BE6B927AE4A36003D6DE7 /* Bookmark.swift */,
+				FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */,
 				FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */,
 				FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */,
 				FBB1D39B27AD0A7800E4E271 /* Scenes */,
@@ -142,7 +152,7 @@
 			children = (
 				FBB1D36327ACFAB700E4E271 /* TabBarController.swift */,
 				FBB1D39E27AD385900E4E271 /* Translate */,
-				FBB1D39927AD0A7200E4E271 /* BookmarkViewController.swift */,
+				FBB1D39927AD0A7200E4E271 /* BookmarkListViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -175,6 +185,8 @@
 			packageProductDependencies = (
 				FBB1D39027ACFC4A00E4E271 /* Alamofire */,
 				FBB1D39327ACFC5900E4E271 /* SnapKit */,
+				FB5BE6B527AD53A8003D6DE7 /* RxCocoa */,
+				FB5BE6B727AD53A8003D6DE7 /* RxSwift */,
 			);
 			productName = Translate;
 			productReference = FBB1D35C27ACFAB700E4E271 /* Translate.app */;
@@ -251,6 +263,7 @@
 			packageReferences = (
 				FBB1D38F27ACFC4A00E4E271 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FBB1D39227ACFC5900E4E271 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FB5BE6B427AD53A8003D6DE7 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = FBB1D35D27ACFAB700E4E271 /* Products */;
 			projectDirPath = "";
@@ -295,12 +308,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB1D36427ACFAB700E4E271 /* TabBarController.swift in Sources */,
-				FBB1D39A27AD0A7200E4E271 /* BookmarkViewController.swift in Sources */,
+				FB5BE6BC27AE4BAC003D6DE7 /* UserDefaults+.swift in Sources */,
+				FBB1D39A27AD0A7200E4E271 /* BookmarkListViewController.swift in Sources */,
 				FBB1D39D27AD381F00E4E271 /* SourceTextViewController.swift in Sources */,
 				FBB1D3A027AD45D600E4E271 /* Language.swift in Sources */,
 				FBB1D36027ACFAB700E4E271 /* AppDelegate.swift in Sources */,
 				FBB1D36227ACFAB700E4E271 /* SceneDelegate.swift in Sources */,
 				FBB1D39827AD0A4C00E4E271 /* TranslateViewController.swift in Sources */,
+				FB5BE6BA27AE4A36003D6DE7 /* Bookmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +651,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FB5BE6B427AD53A8003D6DE7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		FBB1D38F27ACFC4A00E4E271 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -655,6 +678,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FB5BE6B527AD53A8003D6DE7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB5BE6B427AD53A8003D6DE7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FB5BE6B727AD53A8003D6DE7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB5BE6B427AD53A8003D6DE7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		FBB1D39027ACFC4A00E4E271 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FBB1D38F27ACFC4A00E4E271 /* XCRemoteSwiftPackageReference "Alamofire" */;

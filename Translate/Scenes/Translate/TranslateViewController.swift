@@ -82,18 +82,48 @@ final class TranslateViewController: UIViewController {
         
         button.setImage(UIImage(systemName: "bookmark"), for: .normal)
         button.tintColor = .systemPink
+        button.addTarget(self, action: #selector(didTapBookmarkButton), for: .touchUpInside)
         
         return button
     }()
+    
+    @objc func didTapBookmarkButton() {
+        guard let sourceText = sourceLabel.text,
+              let translatedText = resultLabel.text,
+              bookmarkButton.imageView?.image == UIImage(systemName: "bookmark")
+                else {return}
+        
+        bookmarkButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        
+        let currentBookmarks: [Bookmark] = UserDefaults.standard.bookmarks
+        
+        let newBookmark = Bookmark(
+            sourceLanguage: sourceLanguage,
+            translatedLanguage: targetLanguage,
+            sourceText: sourceText,
+            translatedText: translatedText
+        )
+        
+        UserDefaults.standard.bookmarks = [newBookmark] + currentBookmarks
+        
+        print(UserDefaults.standard.bookmarks)
+        //UserDefaults에 저장하는 타이밍
+    }
+    
     
     private lazy var copyButton: UIButton = {
         let button = UIButton()
         
         button.setImage(UIImage(systemName: "doc.on.doc"), for: .normal)
         button.tintColor = .systemPink
+        button.addTarget(self, action: #selector(didTapCopyButton), for: .touchUpInside)
         
         return button
     }()
+    
+    @objc func didTapCopyButton() {
+        UIPasteboard.general.string = resultLabel.text
+    }
     
     private lazy var sourceLabelBaseView: UIView = {
         let view = UIView()
@@ -139,6 +169,8 @@ extension TranslateViewController: SourceTextViewControllerDelegate {
         
         sourceLabel.textColor = .label
         sourceLabel.text = sourceText
+        
+        bookmarkButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
     }
 }
 
