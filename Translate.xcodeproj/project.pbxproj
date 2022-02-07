@@ -13,6 +13,9 @@
 		FB5BE6BC27AE4BAC003D6DE7 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */; };
 		FB5BE6BF27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6BE27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift */; };
 		FB5BE6C127AE5B90003D6DE7 /* bookmarkTextStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6C027AE5B90003D6DE7 /* bookmarkTextStackView.swift */; };
+		FB5BE6C327B0FF0F003D6DE7 /* TranslateRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6C227B0FF0F003D6DE7 /* TranslateRequestModel.swift */; };
+		FB5BE6C527B0FF52003D6DE7 /* TranslateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6C427B0FF52003D6DE7 /* TranslateResponseModel.swift */; };
+		FB5BE6C727B10023003D6DE7 /* TranslatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5BE6C627B10023003D6DE7 /* TranslatorManager.swift */; };
 		FBB1D36027ACFAB700E4E271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */; };
 		FBB1D36227ACFAB700E4E271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */; };
 		FBB1D36427ACFAB700E4E271 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D36327ACFAB700E4E271 /* TabBarController.swift */; };
@@ -51,6 +54,9 @@
 		FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		FB5BE6BE27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB5BE6C027AE5B90003D6DE7 /* bookmarkTextStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookmarkTextStackView.swift; sourceTree = "<group>"; };
+		FB5BE6C227B0FF0F003D6DE7 /* TranslateRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequestModel.swift; sourceTree = "<group>"; };
+		FB5BE6C427B0FF52003D6DE7 /* TranslateResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResponseModel.swift; sourceTree = "<group>"; };
+		FB5BE6C627B10023003D6DE7 /* TranslatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorManager.swift; sourceTree = "<group>"; };
 		FBB1D35C27ACFAB700E4E271 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +114,16 @@
 			path = Bookmark;
 			sourceTree = "<group>";
 		};
+		FB5BE6C827B1002F003D6DE7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FB5BE6C227B0FF0F003D6DE7 /* TranslateRequestModel.swift */,
+				FB5BE6C427B0FF52003D6DE7 /* TranslateResponseModel.swift */,
+				FB5BE6C627B10023003D6DE7 /* TranslatorManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		FBB1D35327ACFAB700E4E271 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +152,7 @@
 				FB5BE6BB27AE4BAC003D6DE7 /* UserDefaults+.swift */,
 				FBB1D35F27ACFAB700E4E271 /* AppDelegate.swift */,
 				FBB1D36127ACFAB700E4E271 /* SceneDelegate.swift */,
+				FB5BE6C827B1002F003D6DE7 /* Network */,
 				FBB1D39B27AD0A7800E4E271 /* Scenes */,
 				FBB1D36827ACFAB800E4E271 /* Assets.xcassets */,
 				FBB1D36A27ACFAB800E4E271 /* LaunchScreen.storyboard */,
@@ -327,9 +344,12 @@
 				FB5BE6C127AE5B90003D6DE7 /* bookmarkTextStackView.swift in Sources */,
 				FBB1D39D27AD381F00E4E271 /* SourceTextViewController.swift in Sources */,
 				FB5BE6BF27AE55B7003D6DE7 /* BookmarkCollectionViewCell.swift in Sources */,
+				FB5BE6C327B0FF0F003D6DE7 /* TranslateRequestModel.swift in Sources */,
 				FBB1D3A027AD45D600E4E271 /* Language.swift in Sources */,
 				FBB1D36027ACFAB700E4E271 /* AppDelegate.swift in Sources */,
+				FB5BE6C527B0FF52003D6DE7 /* TranslateResponseModel.swift in Sources */,
 				FBB1D36227ACFAB700E4E271 /* SceneDelegate.swift in Sources */,
+				FB5BE6C727B10023003D6DE7 /* TranslatorManager.swift in Sources */,
 				FBB1D39827AD0A4C00E4E271 /* TranslateViewController.swift in Sources */,
 				FB5BE6BA27AE4A36003D6DE7 /* Bookmark.swift in Sources */,
 			);
